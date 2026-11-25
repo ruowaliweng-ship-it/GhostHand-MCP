@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghosthand-mcp"
+version = "0.1.0"
+description = "Stealth, protocol-first Windows desktop automation MCP server (zero cursor stealing, 80%+ token savings)."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pywin32>=306",
+    "comtypes>=1.4.0",
+    "uiautomation>=2.0.18",
+    "websockets>=12.0",
+    "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+ghosthand-mcp = "server:main"

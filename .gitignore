@@ -1,0 +1,21 @@
+# Local user overrides (NEVER commit to public repo)
+ghosthand.config.json
+
+# Python caches & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Temporary test screenshots & logs
+*.png
+!assets/sponsor_wechat.png
+*.jpg
+*.bmp
+tests/tmp/
+*.log
